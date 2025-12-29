@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-4
+version: 25.0.0-3
 pkgbase:
   name: xlibre-input-evdev
   pkgdesc: XLibre fork of X.Org evdev input driver
   pkgver: 25.0.0
-  pkgrel: 4
+  pkgrel: 3
   url: https://github.com/X11Libre/xf86-input-evdev
   arch:
     - x86_64
@@ -16,6 +16,7 @@ pkgbase:
   depends:
     - xlibre-xserver>=25.0
     - glibc
+    - libudev
     - mtdev
     - libevdev
     - glibc

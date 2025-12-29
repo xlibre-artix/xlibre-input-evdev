@@ -2,7 +2,7 @@
 
 pkgname=xlibre-input-evdev
 pkgver=25.0.0
-pkgrel=4
+pkgrel=3
 pkgdesc="XLibre fork of X.Org evdev input driver"
 arch=(x86_64)
 _pkgname="${pkgname//xlibre/xf86}"
@@ -13,7 +13,7 @@ conflicts=("${_pkgname}")
 provides=("${_pkgname}")
 source=("${url}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
-depends+=('mtdev' 'libevdev' 'glibc')
+depends+=('libudev' 'mtdev' 'libevdev' 'glibc')
 
 build() {
   cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
