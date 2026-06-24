@@ -1,0 +1,8 @@
+v25.0.0-1: base on upstream Arch
+
+Based the PKGBUILD on the upstream Arch Linux one.
+* Copied PKGBUILD from the xlibre-arch repository.
+* Changed systemd dependencies to elogind resp. udev.
+* Added license information for the package source files.
+* Added credit for the former Arch maintainers and contributors.
+* Reduced inline CFLAGS logic to a minimum.
